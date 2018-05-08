@@ -12,5 +12,12 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require coreui-free
+// = require jquery
+// = require popper
+// = require bootstrap
+// = require pace
+// = require moment
+// = require Chart
+//= require @coreui/coreui/dist/js/coreui
 //= require_tree .
+

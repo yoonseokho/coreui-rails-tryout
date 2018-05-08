@@ -1,36 +1,3 @@
-<div class="app-body">
-  <div class="sidebar">
-    <nav class="sidebar-nav">
-    <ul class="nav">
-
-      <li class="nav-item nav-dropdown">
-        <a class="nav-link nav-dropdown-toggle" href="#">
-          <i class="nav-icon icon-puzzle"></i> Base</a>
-        <ul class="nav-dropdown-items">
-          <li class="nav-item">
-            <a class="nav-link" href="base-breadcrumb.html">
-              <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="base-cards.html">
-              <i class="nav-icon icon-puzzle"></i> Cards</a>
-          </li>
-        </ul>
-      </li>
-
-      <li class="nav-item nav-dropdown">
-        <a class="nav-link nav-dropdown-toggle" href="#"> Webコンテンツ管理</a>
-        <ul class="nav-dropdown-items">
-          <li class="nav-item">
-            <a class="nav-link" href="#"> FAQ</a>
-          </li>
-        </ul>
-      </li>
-    </ul>
-    </nav>
-  </div>
-
-  <main class="main">
     <!-- Breadcrumb -->
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Webコンテンツ管理</a></li>
@@ -67,6 +34,9 @@
     <br>
     
     <%= link_to 'New Post', new_post_path %>
+
+    <br>
+
     <div class="card-columns cols-2">
       <div class="card">
         <div class="card-header">
@@ -84,6 +54,4 @@
         </div>
       </div>
     </div>
-  </main>
-</div>
-<%= javascript_include_tag 'charts' %>
+    <%= javascript_include_tag 'charts' %>

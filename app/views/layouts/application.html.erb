@@ -12,39 +12,15 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
-  <body class="app sidebar-lg-show">
+  <body class="app sidebar-fixed sidebar-lg-show">
 
-    <header class="app-header navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Gameon Admin</a>
-      <button class="navbar-toggler mobile-sidebar-toggler d-lg-none" type="button">☰</button>
-      <a class="navbar-brand" href="#"></a>
-      <ul class="nav navbar-nav d-md-down-none">
-        <li class="nav-item">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownTitles" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Archeage
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuTitles">
-              <a class="dropdown-item" href="#">Bless</a>
-              <a class="dropdown-item" href="#">黒い砂漠</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              あえ イオウさん
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Log Out</a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link navbar-toggler sidebar-toggler" href="#">☰</a>
-        </li>
-      </ul>
-    </header>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <div class="app-body">
+      <%= render 'layouts/sidebar' %>
+
+      <main class="main">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>

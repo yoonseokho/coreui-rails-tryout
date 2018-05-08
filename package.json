@@ -1,5 +1,8 @@
 {
   "name": "core-ui",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "@coreui/coreui": "^2.0.0-rc.2",
+    "@coreui/coreui-plugin-chartjs-custom-tooltips": "1.2.0"
+  }
 }
